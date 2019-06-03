@@ -16,11 +16,13 @@
     height:109px;
     background-color: #212222;
     color:white;
+    text-align:right;
 }
 
 .clear, .zero{
-    width:293px;
+    width:294px;
     height:82px;
+    text-align:center;
 }
 
 .divide, .multiplication,.minus,.plus,.equals{
