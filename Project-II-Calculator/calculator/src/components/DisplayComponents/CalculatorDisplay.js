@@ -7,23 +7,23 @@ const CalculatorDisplay = props => {
 
 return (
         <div className="display">
-            <section className="results"><NumberButton number="0"/></section>
-            <section className="clear"><ActionButton action="clear"/></section>
-            <section className="divide"><ActionButton action="/"/></section>
-            <section className="seven"><NumberButton number="7"/></section>
-            <section className="eight"><NumberButton number="8"/></section>
-            <section className="nine"><NumberButton number="9"/></section>
-            <section className="multiplication"><ActionButton action="*"/></section>
-            <section className="four"><NumberButton number="4"/></section>
-            <section className="five"><NumberButton number="5"/></section>
-            <section className="six"><NumberButton number="6"/></section>
-            <section className="minus"><ActionButton action="-"/></section>
-            <section className="one"><NumberButton number="1"/></section>
-            <section className="two"><NumberButton number="2"/></section>
-            <section className="three"><NumberButton number="3"/></section>
-            <section className="plus"><ActionButton action="+"/></section>
-            <section className="zero"><NumberButton number="0"/></section>
-            <section className="equals"><ActionButton action="="/></section>
+            <NumberButton sectionStyle="results" number="0"/>
+            <ActionButton sectionStyle="clear" action="clear"/>
+            <ActionButton sectionStyle="divide" action="/"/>
+            <NumberButton sectionStyle="seven" number="7"/>
+            <NumberButton sectionStyle="eight" number="8"/>
+            <NumberButton sectionStyle="nine" number="9"/>
+            <ActionButton sectionStyle="multiplication" action="*"/>
+            <NumberButton sectionStyle="four" number="4"/>
+            <NumberButton sectionStyle="five" number="5"/>
+            <NumberButton sectionStyle="six" number="6"/>
+            <ActionButton sectionStyle="minus" action="-"/> 
+            <NumberButton sectionStyle="one" number="1"/>
+            <NumberButton sectionStyle="two" number="2"/>
+            <NumberButton sectionStyle="three" number="3"/>
+            <ActionButton sectionStyle="plus" action="+"/>
+            <NumberButton sectionStyle="zero" number="0"/>
+            <ActionButton sectionStyle="equals" action="="/>
 
         </div>
 
