@@ -1,27 +1,29 @@
 import React from 'react';
 import './Display.css';
+import NumberButton from '../ButtonComponents/NumberButton';
+import ActionButton from '../ButtonComponents/ActionButton';
 
 const CalculatorDisplay = props => {
 
 return (
         <div className="display">
-            <section className="results"><h1>0</h1></section>
-            <section className="clear"><h1>Clear</h1></section>
-            <section className="divide"><h1>/</h1></section>
-            <section className="seven"><h1>7</h1></section>
-            <section className="eight"><h1>8</h1></section>
-            <section className="nine"><h1>9</h1></section>
-            <section className="multiplication"><h1>*</h1></section>
-            <section className="four"><h1>4</h1></section>
-            <section className="five"><h1>5</h1></section>
-            <section className="six"><h1>6</h1></section>
-            <section className="minus"><h1>-</h1></section>
-            <section className="one"><h1>1</h1></section>
-            <section className="two"><h1>2</h1></section>
-            <section className="three"><h1>3</h1></section>
-            <section className="plus"><h1>+</h1></section>
-            <section className="zero"><h1>0</h1></section>
-            <section className="equals"><h1>=</h1></section>
+            <section className="results"><NumberButton number="0"/></section>
+            <section className="clear"><ActionButton action="clear"/></section>
+            <section className="divide"><ActionButton action="/"/></section>
+            <section className="seven"><NumberButton number="7"/></section>
+            <section className="eight"><NumberButton number="8"/></section>
+            <section className="nine"><NumberButton number="9"/></section>
+            <section className="multiplication"><ActionButton action="*"/></section>
+            <section className="four"><NumberButton number="4"/></section>
+            <section className="five"><NumberButton number="5"/></section>
+            <section className="six"><NumberButton number="6"/></section>
+            <section className="minus"><ActionButton action="-"/></section>
+            <section className="one"><NumberButton number="1"/></section>
+            <section className="two"><NumberButton number="2"/></section>
+            <section className="three"><NumberButton number="3"/></section>
+            <section className="plus"><ActionButton action="+"/></section>
+            <section className="zero"><NumberButton number="0"/></section>
+            <section className="equals"><ActionButton action="="/></section>
 
         </div>
 

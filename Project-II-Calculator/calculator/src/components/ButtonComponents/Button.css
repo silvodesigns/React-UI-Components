@@ -1,0 +1,29 @@
+.seven, .eight, .nine, .four,.five,.three,.six, .two,.one{
+    width:98px;
+    height:82px;
+    text-align:center;
+}
+
+.clear, .zero{
+    width:294px;
+    height:82px;
+    text-align:center;
+}
+
+.divide, .multiplication,.minus,.plus,.equals{
+    width:105.5px;
+    height:82px;
+    background-color:#af1e23;
+    color:white;
+    text-align:Center;
+}
+
+.results{
+    width:100%;
+    height:109px;
+    background-color: #212222;
+    color:white;
+    text-align:right;
+}
+
+
