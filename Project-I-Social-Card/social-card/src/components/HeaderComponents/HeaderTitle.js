@@ -5,8 +5,8 @@ const HeaderTitle = props => {
 
     return (
         <div>
-            <h3>Lambda School</h3>
-            <span>@LambdaSchool - 26 Jan</span>
+            <h3 className="title">{props.title}</h3>
+            <span className="timeStamp">@{props.title} - {props.date}</span>
         </div>
     );
 };
