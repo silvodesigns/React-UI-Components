@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="root">
+
+    </div>
+
+
+
+
+        <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+      
+        <!-- Load our React component. -->
+        <script type="text/babel">
+
+
+                const BartProfile = {
+                            name: "Bartholomew Jo-Jo Simpson",
+                            identity: "The troublemaker of the Simpson family.",
+                            age: "10 (2 years and 38 days older than Lisa)",
+                            family: ['Homer', 'Marge', 'Lisa', 'Maggie', 'Abe', 'Jacqueline', 'Patty', 'Selma', 'Herb'],
+                            catchphrases: ['Aye Carumba!', 'Eat my shorts', "I didn't do it!"],  
+                            best_friend: 'Milhouse Van Houten',
+                }
+
+
+                const BartComponent = props => {
+                    return (
+                        
+                    <div>
+                        <h3>Name: {props.bart.name}</h3>
+                        <p> age: {props.bart.age}</p>
+                        <p>Identity: {props.bart.identity}</p>
+                        <p>Best Friend: {props.bart.best_friend}</p>
+                        <p>Catchphrases:</p>
+                        <ul id="phrases">  
+                        </ul>
+                        <p>Family Members:</p>
+                        <ul id="family">
+                        </ul>
+                    </div>
+                    );
+                }
+
+                <BartComponent bart={BartProfile} />
+                const phrases = BartProfile.catchphrases;
+                const family = BartProfile.family;
+
+                const list = phrases.map((p) =>
+                         <li>{p}</li>
+                );
+
+                const members = family.map((name) =>
+                            <li>{name}</li>
+
+                );
+
+               
+
+                ReactDOM.render(<BartComponent bart={BartProfile} />, document.getElementById('root'));
+                ReactDOM.render( list ,document.getElementById('phrases'));
+                ReactDOM.render(members, document.getElementById('family'));
+
+             
+
+                        
+                        
+                        
+        
+        
+        
+        
+        </script>
+    
+</body>
+</html>

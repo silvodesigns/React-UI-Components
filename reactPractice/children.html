@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Children</title>
+
+    <style>
+    
+    
+    </style>
+</head>
+<body>
+
+    <div id="root">
+
+    </div>
+
+
+
+
+        <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+      
+        <!-- Load our React component. -->
+        <script type="text/babel">
+        
+                    const simpsonData = {
+                        name: "Orville Simpson",
+                        spouse: "Yuma Hickman",
+                        children: [
+                            {
+                            name: "Abraham Simpson",
+                            spouse: "Mona",
+                            children: [
+                                {
+                                name: "Homer Simpson",
+                                spouse: "Marge Bouvier",
+                                children: [
+                                    {
+                                    name: "Bart Simpson"
+                                    },
+                                    {
+                                    name: "Lisa Simpson"
+                                    },
+                                    {
+                                    name: "Maggie Simpson"
+                                    }
+                                ]
+                                }
+                            ]
+                            }
+                        ]
+                        };
+
+                        //parent component
+                        const Parent = props => {
+                            return (
+                                <div>
+                                    <h1>Parent: {props.name}</h1>
+                                    {props.child ? <Child name={props.child} /> : null}
+                                </div>
+                            );
+                        };
+
+                        const Child = props => {
+                            return (
+                                <div>
+                                <h2>Child: {props.name}</h2>
+                                {props.grandChild ? <GrandChild name={props.grandChild} /> : null}
+                                </div>
+                            );
+                         };
+
+
+
+                         const GrandChild = props => {
+                                return (
+                                    <div>
+                                    <h3>{props.name}</h3>
+                                    </div>
+                                );
+                        };
+
+
+ 
+                const App = () => {
+                        return (
+                            <div className="App">
+                            <h2>Simpsons Lineage</h2>
+                            <Parent
+                             name={simpsonData.name}
+                             child={simpsonData.children[0].name}
+                             grandChild={simpsonData.children[0].children[0].name}
+                            
+                            />
+                            </div>
+                        );
+                };
+
+                 const rootElement = document.getElementById("root");                                       
+                 ReactDOM.render(<App />, rootElement);
+             
+    
+             
+
+                        
+                        
+                        
+        
+        
+        
+        
+        </script>
+    
+</body>
+</html>

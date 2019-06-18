@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reusability</title>
+
+    <style>
+    
+    
+    </style>
+</head>
+<body>
+
+    <div id="root">
+
+    </div>
+
+
+
+
+        <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+      
+        <!-- Load our React component. -->
+        <script type="text/babel">
+//Every time the page refreshes user sees a new background color
+
+                //possible colors array
+                const family = ['Abuelita', 'David', 'Isaiah', 'Abigail', 'Mia Angelina', 'Aida', 'Brian'];
+
+                        
+                        let name = '';
+                        const nameGiving = () => {
+                            const member = family[Math.floor(Math.random() * family .length)];
+                            name = member;
+                            return;
+                            };
+
+
+
+
+    nameGiving();
+    const MyDiv = props => <div><h1>My favorite family member today is {name}</h1></div>;
+    ReactDOM.render(<MyDiv/>, document.getElementById('root'));
+
+             
+
+
+               
+
+             
+    
+             
+
+                        
+                        
+                        
+        
+        
+        
+        
+        </script>
+    
+</body>
+</html>
