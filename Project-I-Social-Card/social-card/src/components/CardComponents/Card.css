@@ -1,8 +1,20 @@
 /* All styles for your Card Components live here */
 
+.cardContainer{
+   margin-left:90px;
+
+}
 
 .cardBanner{
     width:100%;
     max-width:600px;
-    margin-left:90px;
+}
+
+.web{
+    color:lightgray;
+}
+
+.cardContent{
+  width:80%;
+    
 }

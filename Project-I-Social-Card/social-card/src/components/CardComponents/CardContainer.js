@@ -8,7 +8,7 @@ const CardContainer = props => {
     return(
         <div className="cardContainer">
             <CardBanner src=" https://tk-assets.lambdaschool.com/fcd75197-7d12-46ec-bc9e-4130f34822fa_reactbackground.png" />
-            <CardContent title="Get started with Reach" web="reactjs.org" content="
+            <CardContent title="Get started with React" web="reactjs.org" content="
 
                 React makes it painless to create
                 interactive UIs. Design simple views

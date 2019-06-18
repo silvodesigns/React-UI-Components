@@ -7,7 +7,7 @@ const CardContent = props => {
         <div>
             <h3 className="cardTitle">{props.title}</h3>
             <p className="cardContent">{props.content}</p>
-            <span>{props.web}</span>
+            <span className="web">{props.web}</span>
 
         </div>
 
